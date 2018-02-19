@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Dominos</title>
+    <link href="~/_assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/_assets/css/shop-item.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    @{Html.RenderPartial("_Nav");}
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            @RenderBody()
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+    <div id="ajax-container">
+        <img src="~/_assets/img/ajax-loader.gif" class="ajax-loader">
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="~/_assets/js/jquery.js"></script>
+    <script src="~/_assets/js/bootstrap.min.js"></script>
+    <script src="~/_assets/js/main.js"></script>
+
+    @RenderSection("script", false)
+
+</body>
+
+</html>
